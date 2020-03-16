@@ -127,9 +127,13 @@ $(document).ready(function(){
 					$('#tile6').css('left') == '680px' && $('#tile6').css('top') == '338px' 
 				){
 					$('p').text('TOTAL TIME: ' + sec + ' SECONDS!  TOTAL MOVES   ' + moves);// replaces how to play 
-				    $('div').text(''); //remove  instructions
+                    $('div').text(''); //remove  instructions
+                    $('h2').text('');
+                    $('h1').text('Good Job!')
 					$('article').addClass('highlight-2');
-					alert("Good Job! Restart to play again."); //alert they were successfull
+                    alert("Good Job! Restart to play again."); //alert they were successfull
+                   
+                    
 					moves = 0;
 				}
 			}, 1000);
