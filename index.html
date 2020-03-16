@@ -1,11 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="utf-8"/>
+	<title>Image Puzzle</title>
+	<!-- main css -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
 </head>
 <body>
-    
+<h1>GET PUZZLED</h1>
+
+<div id="original">
+	<img src="images/Image.jpg" alt="original image" width = "670" height= "540" style="width:50%;">
+</div>
+
+<p><b>Instructions</b></p>
+<div>
+	
+	<p>Click on any tile you want to move<br>
+	Tile will pop up after you select<br>
+	Click on another tile you want to swap it with</p>
+	
+</div>
+<h2>Lets Play!</h2>
+<article>
+
+  <div class="gamearea" id="tile1"></div>
+  <div class="gamearea" id="tile2"></div>
+  <div class="gamearea" id="tile3"></div>
+  <div class="gamearea" id="tile4"></div>
+  <div class="gamearea" id="tile5"></div>
+  <div class="gamearea" id="tile6"></div>
+</article>
+<!--<p></p>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
