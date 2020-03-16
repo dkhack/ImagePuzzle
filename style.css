@@ -1,0 +1,127 @@
+body{ /*styling for all the body elements*/
+	font-family:  Arial, sans-serif, Helvetica;
+	font-size: 14px;
+	color: black;
+	background: #d9f5f11f;
+	line-height: 1.7em;
+	padding: 0;
+	margin: 0;
+	}
+h1, h2{
+	text-align: center;
+	
+	}
+
+
+p{
+	margin-top: 10;
+	padding-top: 10;
+	font-size: 14px;
+
+		
+		text-align: center;
+}
+		
+	
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+/*canvas part where the initial gamearea will be placed*/
+article{
+	width: 900px;
+	height: 620px;
+	background: #f2f2f2;
+	margin: 20px auto 10px auto;
+	position: relative;
+	-webkit-transition: all 0.8s cubic-bezier(0.58, -0.55, 0.265, 1.45);
+	-ms-transition: all 0.8s cubic-bezier(0.58, -0.55, 0.265, 1.45);
+	-moz-transition: all 0.8s cubic-bezier(0.58, -0.55, 0.265, 1.45);
+	transition: all 0.8s cubic-bezier(0.58, -0.55, 0.265, 1.45);
+	}
+
+.gamearea{
+	width: 338px;
+	height: 338px;
+	position: absolute;
+	z-index: 20;
+	-webkit-transition: all 0.6s cubic-bezier(0.58, -0.55, 0.265, 1.45);
+	-ms-transition: all 0.6s cubic-bezier(0.58, -0.55, 0.265, 1.45);
+	-moz-transition: all 0.6s cubic-bezier(0.58, -0.55, 0.265, 1.45);
+	transition: all 0.6s cubic-bezier(0.58, -0.55, 0.265, 1.45);
+	perspective: 1000;
+	}
+
+/*image position settings*/
+#tile1{ 							/*top left*/
+	top: 0;
+	left: 0;
+	background: url(images/1.jpg);    
+	background-size: 100% 100%;	
+	border: 2px solid #FFFFFF;
+}
+
+#tile2{								/*top middle */
+	top: 0;
+	left: 338px;
+	background: url(images/2.jpg);   
+	background-size: 100% 100%; 
+	border: 2px solid #FFFFFF;
+	}
+
+#tile3{							/*top right*/
+	top: 0;
+	left: 680px;
+	background: url(images/3.jpg);   
+	background-size: 100% 100%; 
+	border: 2px solid #FFFFFF;
+	}
+
+#tile4{						/*bottom left */
+	top: 338px;
+	left: 0;
+	background: url(images/4.jpg);  
+	background-size: 100% 100%; 
+	border: 2px solid #FFFFFF;
+	}
+
+#tile5{						/*bottom middle*/
+	top: 338px;
+	left: 338px;
+	background: url(images/5.jpg);   
+	background-size: 100% 100%; 
+	border: 2px solid #FFFFFF;
+	}
+
+#tile6{						/*bottom right*/
+	top: 338px;
+	left: 680px;
+	background: url(images/6.jpg);    
+	background-size: 100% 100%; 
+	border: 2px solid #FFFFFF;
+	}
+
+
+
+.highlight{ /*highlight image when pressed*/
+	z-index: 200;
+    -webkit-box-shadow: 0px 0px 20px 0px #000000;
+  	box-shadow: 0px 0px 20px 0px #000000;
+  	transform: scale(1.05);
+	}
+
+@-webkit-keyframes animate-guage {
+	0%   { transform: scale(1.04); }
+	50%   { transform: scale(1.06); }
+	100%  { transform: scale(1.04); }
+	}
+
+.highlight-2{ -webkit-transform: rotateX(360deg); } /*when the game is over */
+
+@-webkit-keyframes animate-guage-2 {
+	0%   { transform: scale(1); }
+	50%   { transform: scale(1.02); }
+	100%  { transform: scale(1); }
+	}
